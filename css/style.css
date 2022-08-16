@@ -1,0 +1,145 @@
+:root {
+  --color-about-main: #424242;
+  --color-about-secondary: #3d3d3d;
+  --color-about-title: #000000;
+  --color-about-accent: #ea723d;
+
+  --color-about-button: #ffffff;
+  --background-color-about-button: #424242;
+}
+
+body {
+  color: var(--color-about-main);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.125;
+  letter-spacing: 0.01em;
+}
+
+p,
+a,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  width: 1180px;
+}
+
+/* загальні стилі секції */
+.about {
+  padding: 98px 0 51px 0;
+}
+
+/* заголовки title*/
+.about__subtitle,
+.about__title {
+  color: var(--color-about-title);
+  font-weight: 600;
+}
+
+.about__title {
+  margin-bottom: 50px;
+
+  font-size: 32px;
+  line-height: 1.188;
+  letter-spacing: 0.01em;
+}
+
+.about__title--accent {
+  color: var(--color-about-accent);
+}
+
+.about__subtitle,
+.about__caption {
+  margin-bottom: 30px;
+}
+
+.about__subtitle {
+  margin-top: 6px;
+
+  font-size: 22px;
+  line-height: 1.772;
+}
+
+/* наповнення карток caption (перша має інші стилі)*/
+.about-list__item:nth-child(1) .about__caption,
+.about__call {
+  color: var(--color-about-secondary);
+  font-size: 15px;
+  letter-spacing: 0.015em;
+}
+
+.about-list__item:nth-child(1) .about__caption {
+  line-height: 1.4;
+}
+.about__call {
+  font-style: italic;
+  line-height: 1.2;
+}
+
+/* розміщення контенту у правильному порядку*/
+/* about-list__item, holder */
+
+.about-list__item {
+  display: flex;
+  margin-bottom: 135px;
+}
+
+.about-list__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.about-list__item:nth-child(odd) .about__holder {
+  margin-left: 67px;
+}
+.about-list__item:nth-child(even) .about__holder {
+  margin-right: 67px;
+}
+
+/* кнопка button*/
+.about__button {
+  width: 189px;
+  height: 50px;
+
+  margin-top: 150px;
+
+  border-radius: 5px;
+  border-color: transparent;
+
+  background-color: var(--background-color-about-button);
+  color: var(--color-about-button);
+  line-height: 1.75;
+  text-align: center;
+}
