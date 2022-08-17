@@ -142,4 +142,12 @@ img {
   color: var(--color-about-button);
   line-height: 1.75;
   text-align: center;
+
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.about__button:hover,
+.about__button:focus {
+  background-color: var(--color-about-accent);
+  color: var(--color-about-title);
 }
