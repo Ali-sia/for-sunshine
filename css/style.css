@@ -151,3 +151,10 @@ img {
   background-color: var(--color-about-accent);
   color: var(--color-about-title);
 }
+
+/* автоматичний відступ для кнопки (щоб завжди знаходилася внизу) */
+.about-list__item:last-child .about__holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
