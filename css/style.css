@@ -50,12 +50,22 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 
-  width: 1180px;
+  max-width: 1180px;
+  width: 100%;
 }
 
 /* загальні стилі секції */
 .about {
   padding: 98px 0 51px 0;
+}
+
+/* адаптив картинки */
+.about-list__holder {
+  max-width: 587px;
+  max-height: 403px;
+
+  width: 100%;
+  height: 100%;
 }
 
 /* заголовки title*/
@@ -130,10 +140,11 @@ img {
 
 /* кнопка button*/
 .about__button {
-  width: 189px;
-  height: 50px;
+  max-width: 189px;
+  max-height: 50px;
 
-  margin-top: 150px;
+  width: 100%;
+  height: 100%;
 
   border-radius: 5px;
   border-color: transparent;
