@@ -149,6 +149,7 @@ img {
   /* вирівнювання зображень та тексту у списку */
   .about-list__item {
     align-items: center;
+    margin-bottom: 90px;
   }
 }
 
