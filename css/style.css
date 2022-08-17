@@ -138,6 +138,35 @@ img {
   margin-right: 67px;
 }
 
+/* about__holder для адаптиву */
+.about__holder {
+  max-width: 506px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 700px) and (max-width: 750px) {
+  /* вирівнювання зображень та тексту у списку */
+  .about-list__item {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .about-list__item {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .about-list__holder {
+    margin: 0 auto 30px auto;
+  }
+
+  .about-list__item .about__holder {
+    margin: 0 auto !important;
+  }
+}
+
 /* кнопка button*/
 .about__button {
   max-width: 189px;
